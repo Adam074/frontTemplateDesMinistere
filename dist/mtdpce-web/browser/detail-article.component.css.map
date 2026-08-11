@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/features/admin/article/detail-article/detail-article.component.scss"],
+  "sourcesContent": ["::ng-deep .content-article p {\r\n  margin-bottom: 1.5em;\r\n  text-align: justify;\r\n  line-height: 1.6;\r\n}\r\n\r\n::ng-deep .content-article {\r\n  word-wrap: break-word;\r\n  overflow-wrap: break-word;\r\n  word-break: break-word;\r\n}\r\n\r\n::ng-deep .content-article img {\r\n  max-width: 100%;\r\n  height: auto;\r\n}\r\n\r\n::ng-deep .content-article p {\r\n  margin-bottom: 1rem;\r\n}\r\n"],
+  "mappings": ";AAAA,UAAA,CAAA,gBAAA;AACE,iBAAA;AACA,cAAA;AACA,eAAA;;AAGF,UAAA,CANA;AAOE,aAAA;AACA,iBAAA;AACA,cAAA;;AAGF,UAAA,CAZA,gBAYA;AACE,aAAA;AACA,UAAA;;AAGF,UAAA,CAjBA,gBAiBA;AACE,iBAAA;;",
+  "names": []
+}
