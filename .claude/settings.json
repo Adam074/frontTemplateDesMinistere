@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" --max-time 3 http://localhost:8096/api/v1/structures)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" --max-time 3 http://localhost:8096/api/v1/missions)",
+      "Bash(find \"c:\\\\Users\\\\adrab\\\\OneDrive\\\\Desktop\\\\MINISTERE\" -maxdepth 2 -type d 2>/dev/null)",
+      "Read(//c/Users/adrab/OneDrive/Desktop/MINISTERE/**)",
+      "Read(//c/Users/adrab/OneDrive/Desktop/MINISTERE/backendTemplateDesMinistere/src/**)",
+      "Read(//c/Users/adrab/OneDrive/Desktop/MINISTERE/backendTemplateDesMinistere/src/main/java/bf/gov/mtdpce/config/**)",
+      "Bash(grep -n \"API_URL}\\\\`\" -r \"c:\\\\Users\\\\adrab\\\\OneDrive\\\\Desktop\\\\MINISTERE\\\\frontTemplateDesMinistere-1\\\\src\\\\app\\\\core\\\\services\\\\api.service.ts\")",
+      "Read(//c/Users/adrab/OneDrive/Desktop/MINISTERE/backendTemplateDesMinistere/src/main/java/bf/gov/mtdpce/**)",
+      "Bash(find \"c:\\\\Users\\\\adrab\\\\OneDrive\\\\Desktop\\\\MINISTERE\\\\backendTemplateDesMinistere\\\\src\\\\main\\\\java\\\\bf\\\\gov\\\\mtdpce\\\\controller\" -iname \"*Structure*\" -o -iname \"*Ministre*\")",
+      "Read(//c/Users/adrab/OneDrive/Desktop/MINISTERE/backendTemplateDesMinistere/src/main/java/bf/gov/mtdpce/controller/**)",
+      "Bash(cd \"c:\\\\Users\\\\adrab\\\\OneDrive\\\\Desktop\\\\MINISTERE\\\\backendTemplateDesMinistere\" && ls mvnw* pom.xml 2>&1)",
+      "Read(//c/Users/adrab/OneDrive/Desktop/MINISTERE/backendTemplateDesMinistere/**)",
+      "Bash(mvn -v)",
+      "Bash(mvn -q -o compile)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\adrab\\OneDrive\\Desktop\\MINISTERE\\backendTemplateDesMinistere\\src\\main\\java\\bf\\gov\\mtdpce\\config"
+    ]
+  }
+}

@@ -19,7 +19,11 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
 
   return next(req).pipe(
     catchError((error: HttpErrorResponse) => {
-      if (error.status === 401) {
+      // Un 401 sans token signifie que l'endpoint appelé n'est pas public
+      // côté backend (ou n'existe pas) : ce n'est pas une session expirée,
+      // donc on ne déconnecte pas et on ne redirige pas un visiteur anonyme
+      // hors de la page qu'il consulte (ex: pages publiques Ministère).
+      if (error.status === 401 && token) {
         authService.logout();
         // Ne force la redirection que si on est sur une zone protégée.
         // Sinon un 401 déclenché par un appel public (ex: page d'accueil)
